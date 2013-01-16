@@ -1,0 +1,47 @@
+-record('__darwin_pthread_handler_rec', {'__routine', '__arg', '__next'}).
+-record('_opaque_pthread_attr_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_cond_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_condattr_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_mutex_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_mutexattr_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_once_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_rwlock_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_rwlockattr_t', {'__sig', '__opaque'}).
+-record('_opaque_pthread_t', {'__sig', '__cleanup_stack', '__opaque'}).
+-record('__darwin_i386_thread_state', {'__eax', '__ebx', '__ecx', '__edx', '__edi', '__esi', '__ebp', '__esp', '__ss', '__eflags', '__eip', '__cs', '__ds', '__es', '__fs', '__gs'}).
+-record('__darwin_fp_control', {'__invalid', '__denorm', '__zdiv', '__ovrfl', '__undfl', '__precis', '__eqc_c_noname_3', '__pc', '__rc', '__eqc_c_noname_4', '__eqc_c_noname_5'}).
+-record('__darwin_fp_status', {'__invalid', '__denorm', '__zdiv', '__ovrfl', '__undfl', '__precis', '__stkflt', '__errsumm', '__c0', '__c1', '__c2', '__tos', '__c3', '__busy'}).
+-record('__darwin_mmst_reg', {'__mmst_reg', '__mmst_rsrv'}).
+-record('__darwin_xmm_reg', {'__xmm_reg'}).
+-record('__darwin_i386_float_state', {'__fpu_reserved', '__fpu_fcw', '__fpu_fsw', '__fpu_ftw', '__fpu_rsrv1', '__fpu_fop', '__fpu_ip', '__fpu_cs', '__fpu_rsrv2', '__fpu_dp', '__fpu_ds', '__fpu_rsrv3', '__fpu_mxcsr', '__fpu_mxcsrmask', '__fpu_stmm0', '__fpu_stmm1', '__fpu_stmm2', '__fpu_stmm3', '__fpu_stmm4', '__fpu_stmm5', '__fpu_stmm6', '__fpu_stmm7', '__fpu_xmm0', '__fpu_xmm1', '__fpu_xmm2', '__fpu_xmm3', '__fpu_xmm4', '__fpu_xmm5', '__fpu_xmm6', '__fpu_xmm7', '__fpu_rsrv4', '__fpu_reserved1'}).
+-record('__darwin_i386_avx_state', {'__fpu_reserved', '__fpu_fcw', '__fpu_fsw', '__fpu_ftw', '__fpu_rsrv1', '__fpu_fop', '__fpu_ip', '__fpu_cs', '__fpu_rsrv2', '__fpu_dp', '__fpu_ds', '__fpu_rsrv3', '__fpu_mxcsr', '__fpu_mxcsrmask', '__fpu_stmm0', '__fpu_stmm1', '__fpu_stmm2', '__fpu_stmm3', '__fpu_stmm4', '__fpu_stmm5', '__fpu_stmm6', '__fpu_stmm7', '__fpu_xmm0', '__fpu_xmm1', '__fpu_xmm2', '__fpu_xmm3', '__fpu_xmm4', '__fpu_xmm5', '__fpu_xmm6', '__fpu_xmm7', '__fpu_rsrv4', '__fpu_reserved1', '__avx_reserved1', '__fpu_ymmh0', '__fpu_ymmh1', '__fpu_ymmh2', '__fpu_ymmh3', '__fpu_ymmh4', '__fpu_ymmh5', '__fpu_ymmh6', '__fpu_ymmh7'}).
+-record('__darwin_i386_exception_state', {'__trapno', '__cpu', '__err', '__faultvaddr'}).
+-record('__darwin_x86_debug_state32', {'__dr0', '__dr1', '__dr2', '__dr3', '__dr4', '__dr5', '__dr6', '__dr7'}).
+-record('__darwin_x86_thread_state64', {'__rax', '__rbx', '__rcx', '__rdx', '__rdi', '__rsi', '__rbp', '__rsp', '__r8', '__r9', '__r10', '__r11', '__r12', '__r13', '__r14', '__r15', '__rip', '__rflags', '__cs', '__fs', '__gs'}).
+-record('__darwin_x86_float_state64', {'__fpu_reserved', '__fpu_fcw', '__fpu_fsw', '__fpu_ftw', '__fpu_rsrv1', '__fpu_fop', '__fpu_ip', '__fpu_cs', '__fpu_rsrv2', '__fpu_dp', '__fpu_ds', '__fpu_rsrv3', '__fpu_mxcsr', '__fpu_mxcsrmask', '__fpu_stmm0', '__fpu_stmm1', '__fpu_stmm2', '__fpu_stmm3', '__fpu_stmm4', '__fpu_stmm5', '__fpu_stmm6', '__fpu_stmm7', '__fpu_xmm0', '__fpu_xmm1', '__fpu_xmm2', '__fpu_xmm3', '__fpu_xmm4', '__fpu_xmm5', '__fpu_xmm6', '__fpu_xmm7', '__fpu_xmm8', '__fpu_xmm9', '__fpu_xmm10', '__fpu_xmm11', '__fpu_xmm12', '__fpu_xmm13', '__fpu_xmm14', '__fpu_xmm15', '__fpu_rsrv4', '__fpu_reserved1'}).
+-record('__darwin_x86_avx_state64', {'__fpu_reserved', '__fpu_fcw', '__fpu_fsw', '__fpu_ftw', '__fpu_rsrv1', '__fpu_fop', '__fpu_ip', '__fpu_cs', '__fpu_rsrv2', '__fpu_dp', '__fpu_ds', '__fpu_rsrv3', '__fpu_mxcsr', '__fpu_mxcsrmask', '__fpu_stmm0', '__fpu_stmm1', '__fpu_stmm2', '__fpu_stmm3', '__fpu_stmm4', '__fpu_stmm5', '__fpu_stmm6', '__fpu_stmm7', '__fpu_xmm0', '__fpu_xmm1', '__fpu_xmm2', '__fpu_xmm3', '__fpu_xmm4', '__fpu_xmm5', '__fpu_xmm6', '__fpu_xmm7', '__fpu_xmm8', '__fpu_xmm9', '__fpu_xmm10', '__fpu_xmm11', '__fpu_xmm12', '__fpu_xmm13', '__fpu_xmm14', '__fpu_xmm15', '__fpu_rsrv4', '__fpu_reserved1', '__avx_reserved1', '__fpu_ymmh0', '__fpu_ymmh1', '__fpu_ymmh2', '__fpu_ymmh3', '__fpu_ymmh4', '__fpu_ymmh5', '__fpu_ymmh6', '__fpu_ymmh7', '__fpu_ymmh8', '__fpu_ymmh9', '__fpu_ymmh10', '__fpu_ymmh11', '__fpu_ymmh12', '__fpu_ymmh13', '__fpu_ymmh14', '__fpu_ymmh15'}).
+-record('__darwin_x86_exception_state64', {'__trapno', '__cpu', '__err', '__faultvaddr'}).
+-record('__darwin_x86_debug_state64', {'__dr0', '__dr1', '__dr2', '__dr3', '__dr4', '__dr5', '__dr6', '__dr7'}).
+-record('__darwin_mcontext32', {'__es', '__ss', '__fs'}).
+-record('__darwin_mcontext_avx32', {'__es', '__ss', '__fs'}).
+-record('__darwin_mcontext64', {'__es', '__ss', '__fs'}).
+-record('__darwin_mcontext_avx64', {'__es', '__ss', '__fs'}).
+-record('__darwin_sigaltstack', {ss_sp, ss_size, ss_flags}).
+-record('__darwin_ucontext', {uc_onstack, uc_sigmask, uc_stack, uc_link, uc_mcsize, uc_mcontext}).
+-record(sigevent, {sigev_notify, sigev_signo, sigev_value, sigev_notify_function, sigev_notify_attributes}).
+-record('__siginfo', {si_signo, si_errno, si_code, si_pid, si_uid, si_status, si_addr, si_value, si_band, '__pad'}).
+-record('__sigaction', {'__sigaction_u', sa_tramp, sa_mask, sa_flags}).
+-record(sigaction, {'__sigaction_u', sa_mask, sa_flags}).
+-record(sigvec, {sv_handler, sv_mask, sv_flags}).
+-record(sigstack, {ss_sp, ss_onstack}).
+-record(timeval, {tv_sec, tv_usec}).
+-record(rusage, {ru_utime, ru_stime, ru_maxrss, ru_ixrss, ru_idrss, ru_isrss, ru_minflt, ru_majflt, ru_nswap, ru_inblock, ru_oublock, ru_msgsnd, ru_msgrcv, ru_nsignals, ru_nvcsw, ru_nivcsw}).
+-record(rlimit, {rlim_cur, rlim_max}).
+-record('__eqc_c_anonymous', {w_Termsig, w_Coredump, w_Retcode, w_Filler}).
+-record('__eqc_c_anonymous_1', {w_Stopval, w_Stopsig, w_Filler}).
+-record(div_t, {quot, 'rem'}).
+-record(ldiv_t, {quot, 'rem'}).
+-record(lldiv_t, {quot, 'rem'}).
+-record('__sbuf', {'_base', '_size'}).
+-record('__sFILE', {'_p', '_r', '_w', '_flags', '_file', '_bf', '_lbfsize', '_cookie', '_close', '_read', '_seek', '_write', '_ub', '_extra', '_ur', '_ubuf', '_nbuf', '_lb', '_blksize', '_offset'}).
+-record(queue, {inp, outp, size, buf}).
